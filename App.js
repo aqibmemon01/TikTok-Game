@@ -1,50 +1,3 @@
-<head>
-<meta name="viewport"content="width=device-width, initial-scale=0.8">
-</head>
-<style>
-body {
-	background-color:rgb(92, 145, 161); 
-   }
-td { padding:20px;
-	}
-.head{
-  background-color:rgb(42, 42, 245);
-  color:white;
-  border: 5px dotted yellow;
-  font-size: 20px;
-  font-weight: bold;
-  font-family:cursive;
-
-}
-
-</style>
-
-<body>
-<h1>Tik Tok Game</h1>
-<table border="15">
-<tr class="head">
-  <td id="a" onclick="clickme('a')">1</td>
-  <td id="b" onclick="clickme('b')">2</td>
-  <td id="c" onclick="clickme('c')">3</td>
-</tr>
-<tr class="head">
-  <td id="d" onclick="clickme('d')">4</td>
-  <td id="e" onclick="clickme('e')">5</td>
-  <td id="f" onclick="clickme('f')">6</td>
-</tr>
-<tr class="head">
-  <td id="g" onclick="clickme('g')">7</td>
-  <td id="h" onclick="clickme('h')">8</td>
-  <td id="i" onclick="clickme('i')">9</td>
-</tr>
-</table>
-
-
-</body>
-
-
-
-<script>
 var one=prompt("Player 1 Please Enter Your Name");
 var two=prompt("Player 2 Please Enter Your Name");
 var color="green";
@@ -114,19 +67,5 @@ function clickme(z){
    document.getElementById("c").style.backgroundColor=color;
    document.getElementById("e").style.backgroundColor=color;
    document.getElementById("g").style.backgroundColor=color;}
- 
-  
-  
-   
  }
  }
- 
- 
-
-   // document.getElementById("second").innerHTML=Seconds;     
-
-
-</script>
-    
-    
-    

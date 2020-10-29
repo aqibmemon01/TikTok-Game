@@ -1,0 +1,14 @@
+body {
+	background-color:rgb(92, 145, 161); 
+   }
+td { padding:20px;
+	}
+.head{
+  background-color:rgb(42, 42, 245);
+  color:white;
+  border: 5px dotted yellow;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:cursive;
+
+}
