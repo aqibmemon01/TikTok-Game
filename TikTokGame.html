@@ -1,0 +1,132 @@
+<head>
+<meta name="viewport"content="width=device-width, initial-scale=0.8">
+</head>
+<style>
+body {
+	background-color:rgb(92, 145, 161); 
+   }
+td { padding:20px;
+	}
+.head{
+  background-color:rgb(42, 42, 245);
+  color:white;
+  border: 5px dotted yellow;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:cursive;
+
+}
+
+</style>
+
+<body>
+<h1>Tik Tok Game</h1>
+<table border="15">
+<tr class="head">
+  <td id="a" onclick="clickme('a')">1</td>
+  <td id="b" onclick="clickme('b')">2</td>
+  <td id="c" onclick="clickme('c')">3</td>
+</tr>
+<tr class="head">
+  <td id="d" onclick="clickme('d')">4</td>
+  <td id="e" onclick="clickme('e')">5</td>
+  <td id="f" onclick="clickme('f')">6</td>
+</tr>
+<tr class="head">
+  <td id="g" onclick="clickme('g')">7</td>
+  <td id="h" onclick="clickme('h')">8</td>
+  <td id="i" onclick="clickme('i')">9</td>
+</tr>
+</table>
+
+
+</body>
+
+
+
+<script>
+var one=prompt("Player 1 Please Enter Your Name");
+var two=prompt("Player 2 Please Enter Your Name");
+var color="green";
+var counter=1;
+
+function clickme(z){
+  if(document.getElementById(z).innerText==one || document.getElementById(z).innerText==two)
+   {}
+  else{
+	if( counter==1 || counter==3 || counter==5 || counter==7 || counter==9)
+		{
+ document.getElementById(z).innerText=one;
+ counter++;
+ }
+ else if ( counter==2 || counter==4 || counter==6 || counter==8)
+		{
+ document.getElementById(z).innerText=two;
+ counter++;
+ };
+ 
+ 
+  if(document.getElementById("a").innerText==document.getElementById("b").innerText &&
+  	document.getElementById("b").innerText==document.getElementById("c").innerText
+  ){
+   document.getElementById("a").style.backgroundColor=color;
+   document.getElementById("b").style.backgroundColor=color;
+   document.getElementById("c").style.backgroundColor=color;}
+ else if(document.getElementById("d").innerText==document.getElementById("e").innerText &&
+  	document.getElementById("e").innerText==document.getElementById("f").innerText
+  ){
+   document.getElementById("d").style.backgroundColor=color;
+   document.getElementById("e").style.backgroundColor=color;
+   document.getElementById("f").style.backgroundColor=color;}
+ else if(document.getElementById("g").innerText==document.getElementById("h").innerText &&
+  	document.getElementById("h").innerText==document.getElementById("i").innerText
+  ){
+   document.getElementById("g").style.backgroundColor=color;
+   document.getElementById("h").style.backgroundColor=color;
+   document.getElementById("i").style.backgroundColor=color;}
+ else if(document.getElementById("a").innerText==document.getElementById("d").innerText &&
+  	document.getElementById("d").innerText==document.getElementById("g").innerText
+  ){
+   document.getElementById("a").style.backgroundColor=color;
+   document.getElementById("d").style.backgroundColor=color;
+   document.getElementById("g").style.backgroundColor=color;}
+ else if(document.getElementById("b").innerText==document.getElementById("e").innerText &&
+  	document.getElementById("e").innerText==document.getElementById("h").innerText
+  ){
+   document.getElementById("b").style.backgroundColor=color;
+   document.getElementById("e").style.backgroundColor=color;
+   document.getElementById("h").style.backgroundColor=color;}
+ else if(document.getElementById("c").innerText==document.getElementById("f").innerText &&
+  	document.getElementById("f").innerText==document.getElementById("i").innerText
+  ){
+   document.getElementById("c").style.backgroundColor=color;
+   document.getElementById("f").style.backgroundColor=color;
+   document.getElementById("i").style.backgroundColor=color;}
+ else if(document.getElementById("a").innerText==document.getElementById("e").innerText &&
+  	document.getElementById("e").innerText==document.getElementById("i").innerText
+  ){
+   document.getElementById("a").style.backgroundColor=color;
+   document.getElementById("e").style.backgroundColor=color;
+   document.getElementById("i").style.backgroundColor=color;}
+ else if(document.getElementById("c").innerText==document.getElementById("e").innerText &&
+  	document.getElementById("e").innerText==document.getElementById("g").innerText
+  ){
+   document.getElementById("c").style.backgroundColor=color;
+   document.getElementById("e").style.backgroundColor=color;
+   document.getElementById("g").style.backgroundColor=color;}
+ 
+  
+  
+   
+ }
+ }
+ 
+ 
+
+   // document.getElementById("second").innerHTML=Seconds;     
+
+
+</script>
+    
+    
+    
